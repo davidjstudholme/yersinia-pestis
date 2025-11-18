@@ -28,6 +28,9 @@ latest/
 gatk-4.6.2.0.zip
 gatk-4.6.2.0
 
+sratoolkit.3.2.1-ubuntu64
+sratoolkit.3.2.1-ubuntu64.tar.gz
+
 ### Large files in the PhaME results
 *workdir/results/gaps
 *workdir/results/miscs
