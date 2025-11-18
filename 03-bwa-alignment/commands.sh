@@ -15,7 +15,7 @@ for i in ERR9964466_1 ERR9964466_2 ERR9964466_1 SRR6366793_2 SRR1993645_2 SRR212
 do
     bwa aln -l 9999 -n 0.1 -o2  GCF_000009065.1_ASM906v1_genomic.fna.gz $i.fastq.gz > $i.sai
     bwa samse GCF_000009065.1_ASM906v1_genomic.fna.gz $i.sai > $i.sam
-    samtools -b	$i.sam > $i.bam
+    samtools view -b $i.sam > $i.bam
 done
 
 
