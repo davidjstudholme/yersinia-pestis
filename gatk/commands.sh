@@ -1,4 +1,8 @@
 ### Install GATK via Conda
-conda create -n gatk_env
-conda activate gatk_env
-conda install bioconda::gatk
+
+conda config --set auto_update_conda false
+conda config --set solver libmamba
+wget https://github.com/broadinstitute/gatk/releases/download/4.6.2.0/gatk-4.6.2.0.zip
+unzip gatk-4.6.2.0.zip
+conda env create -f gatk-4.6.2.0/gatkcondaenv.yml
+conda activate gatk

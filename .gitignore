@@ -25,6 +25,9 @@
 
 latest/
 
+gatk-4.6.2.0.zip
+gatk-4.6.2.0
+
 ### Large files in the PhaME results
 *workdir/results/gaps
 *workdir/results/miscs
