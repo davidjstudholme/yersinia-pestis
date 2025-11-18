@@ -6,6 +6,9 @@
 *.contig.gz
 *.fasta.gz
 
+*.bam
+*.bai
+
 *.gfa
 *.gfa.gz
 
@@ -24,6 +27,8 @@
 *.dmanifest
 
 latest/
+
+fastq-dump
 
 gatk-4.6.2.0.zip
 gatk-4.6.2.0
