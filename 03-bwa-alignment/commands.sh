@@ -17,6 +17,13 @@ do
     bwa aln -l 9999 -n 0.1 -o2  GCF_000009065.1_ASM906v1_genomic.fna.gz $i.fastq > $i.sai
     bwa samse -f $i.sam GCF_000009065.1_ASM906v1_genomic.fna.gz $i.sai $i.fastq
     samtools view -b $i.sam > $i.bam
+    rm $i.sam $i.sai
+    samtools sort $i.bam -o $i.sorted.bam
+    rm $i.bam
+    samtools rmdup $i.sorted.bam $i.sorted.rmdup.bam
+    rm $i.sorted.bam
+    samtools index $i.sorted.rmdup.bam
+    
 done
 
 
