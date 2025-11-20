@@ -19,6 +19,11 @@
 
 *~
 *.zip
+*.tar
+*.tar.gz
+*.tar.Z
+
+
 */datasets
 */ncbi_dataset
 *workdir/files
